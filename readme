@@ -1,0 +1,9 @@
+
+
+gcloud builds submit --tag gcr.io/plotly-dash-web-app --project=plotly-dash-web-app
+
+gcloud run deploy --image gcr.io/plotly-dash-web-app/DN SIR --platform managed  --
+                                project=plotly-dash-web-app --allow-unauthenticated
+
+
+gcloud builds submit --tag gcr.io/plotly-dash-web-app --project=plotly-dash-web-app
